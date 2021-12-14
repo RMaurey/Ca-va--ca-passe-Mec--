@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
             timerText.text = currentTime.ToString("0");
             yield return new WaitForSeconds(1);
 
-            if (currentTime == 1)
+            if (currentTime == 0)
             {
                 startingTime = Random.Range(2, 7);
                 currentTime = startingTime;
