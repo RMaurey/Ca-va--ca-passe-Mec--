@@ -20,12 +20,13 @@ public class Timer : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
             currentTime -= 1;
             timerText.text = currentTime.ToString("0");
+            yield return new WaitForSeconds(1);
 
-            if (currentTime == 0)
+            if (currentTime == 1)
             {
+                startingTime = Random.Range(2, 7);
                 currentTime = startingTime;
             }
         }
