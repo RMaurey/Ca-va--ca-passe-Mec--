@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class randomForm : MonoBehaviour
+public class shadowManager : MonoBehaviour
 {
     public Timer time;
     private int rnd;
@@ -15,7 +15,6 @@ public class randomForm : MonoBehaviour
             rnd = Random.Range(0, Sprites.Length);
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Sprites[rnd];
             spriteValue = rnd;
-            Debug.Log(spriteValue);
         }
 
     }
