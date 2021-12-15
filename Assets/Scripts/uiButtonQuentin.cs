@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class uiButton : MonoBehaviour
+public class uiButtonQuentin : MonoBehaviour
 {
-    public void OnDeathRestart()
+    public void OnDeathRestartQ()
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 
-    public void OnDeathReturn()
+    public void OnDeathReturnQ()
     {
         Debug.Log("Return");
     }

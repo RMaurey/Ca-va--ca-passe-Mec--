@@ -281,8 +281,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2130571408}
-        m_TargetAssemblyTypeName: uiButtonQuentin, Assembly-CSharp
-        m_MethodName: OnDeathReturnQ
+        m_TargetAssemblyTypeName: uiButtonEnzo, Assembly-CSharp
+        m_MethodName: OnDeathReturnE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -414,8 +414,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2130571408}
-        m_TargetAssemblyTypeName: uiButtonQuentin, Assembly-CSharp
-        m_MethodName: OnDeathRestartQ
+        m_TargetAssemblyTypeName: uiButtonEnzo, Assembly-CSharp
+        m_MethodName: OnDeathRestartE
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -923,10 +923,10 @@ MonoBehaviour:
   currentTime: 0
   startingTime: 1
   Sprites:
-  - {fileID: 21300000, guid: bc112a0dd2a4e424eac80ca048a1532f, type: 3}
-  - {fileID: 21300000, guid: 58d19599177f51544892e6909b7bd563, type: 3}
-  - {fileID: 21300000, guid: 05c320a04c9a05241970ebd76d5d36dc, type: 3}
-  - {fileID: 21300000, guid: 75af8fa7fd921b64c9965c4f86eda8c0, type: 3}
+  - {fileID: 21300000, guid: 7a758a5a685046b4cbef95b7fbc051df, type: 3}
+  - {fileID: 21300000, guid: 78510f4c8a69cb541ad198b92384bbcf, type: 3}
+  - {fileID: 21300000, guid: a4ffa171111f2144fa55171127863788, type: 3}
+  - {fileID: 21300000, guid: cf045faa30d508c42ac625c51fd5bdb7, type: 3}
   spriteValue: 0
   Shadow: {fileID: 1830989424}
   deathUI: {fileID: 1789334079}
@@ -1354,7 +1354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3873b81ceda13d0478c08666797ffbd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d8f851333d3fb542a2ffba31d2d2957, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1472,10 +1472,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInt: 0
-  Sprite1: {fileID: 21300000, guid: bc112a0dd2a4e424eac80ca048a1532f, type: 3}
-  Sprite2: {fileID: 21300000, guid: 58d19599177f51544892e6909b7bd563, type: 3}
-  Sprite3: {fileID: 21300000, guid: 05c320a04c9a05241970ebd76d5d36dc, type: 3}
-  Sprite4: {fileID: 21300000, guid: 75af8fa7fd921b64c9965c4f86eda8c0, type: 3}
+  Sprite1: {fileID: 21300000, guid: 7a758a5a685046b4cbef95b7fbc051df, type: 3}
+  Sprite2: {fileID: 21300000, guid: 78510f4c8a69cb541ad198b92384bbcf, type: 3}
+  Sprite3: {fileID: 21300000, guid: a4ffa171111f2144fa55171127863788, type: 3}
+  Sprite4: {fileID: 21300000, guid: cf045faa30d508c42ac625c51fd5bdb7, type: 3}
 --- !u!1 &1744391634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,7 +1920,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3873b81ceda13d0478c08666797ffbd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d8f851333d3fb542a2ffba31d2d2957, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2136,6 +2136,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130571405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e026d19c32fc87542b597451fe01b0dc, type: 3}
+  m_Script: {fileID: 11500000, guid: a71cfeedc31c66e4eafc516a931f205a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

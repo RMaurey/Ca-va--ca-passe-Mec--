@@ -9,7 +9,6 @@ public class gameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     public Timer time;
     public playerManager player;
-    public shadowManager shadow;
 
     void FixedUpdate()
     {
