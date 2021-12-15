@@ -5,8 +5,14 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    public gameManager game;
+    public playerManager player;
     public float currentTime;
     public float startingTime;
+    private int rnd;
+    public Sprite[] Sprites;
+    public int spriteValue;
+    [SerializeField] GameObject Shadow;
 
     [SerializeField] TextMeshProUGUI timerText;
 
@@ -26,9 +32,27 @@ public class Timer : MonoBehaviour
 
             if (currentTime == 0)
             {
-                startingTime = Random.Range(2, 7);
+                StartCoroutine(ScoreTest());
+                startingTime = Random.Range(2, 5);
                 currentTime = startingTime;
+                rnd = Random.Range(0, Sprites.Length);
+                Shadow.gameObject.GetComponent<SpriteRenderer>().sprite = Sprites[rnd];
+                spriteValue = rnd;
             }
         }
+    }
+
+    private IEnumerator ScoreTest()
+    {
+        if (player.playerInt == spriteValue)
+        {
+            game.score += 1;
+        }
+        else
+        {
+            Debug.Log("loose");
+        }
+
+        yield return null;
     }
 }

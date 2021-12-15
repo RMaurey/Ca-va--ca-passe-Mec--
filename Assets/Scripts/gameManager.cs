@@ -1,24 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class gameManager : MonoBehaviour
 {
-    private bool spritesEquals = false;
+    public int score = 0;
+    [SerializeField] TextMeshProUGUI scoreText;
     public Timer time;
     public playerManager player;
     public shadowManager shadow;
+
     void FixedUpdate()
     {
-        if (player.playerInt == shadow.spriteValue)
-        {
-            spritesEquals = true;
-        }
-        else spritesEquals = false;
-
-        if (time.currentTime == 1)
-        {
-            Debug.Log("bien joué");
-        }
+        scoreText.text = score.ToString("0");
     }
 }

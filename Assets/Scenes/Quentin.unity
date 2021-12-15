@@ -652,8 +652,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4610f1d430483d94a9202adcdcfedcf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game: {fileID: 2130571406}
+  player: {fileID: 1722096414}
   currentTime: 0
   startingTime: 5
+  Sprites:
+  - {fileID: 21300000, guid: bc112a0dd2a4e424eac80ca048a1532f, type: 3}
+  - {fileID: 21300000, guid: 58d19599177f51544892e6909b7bd563, type: 3}
+  - {fileID: 21300000, guid: 05c320a04c9a05241970ebd76d5d36dc, type: 3}
+  - {fileID: 21300000, guid: 75af8fa7fd921b64c9965c4f86eda8c0, type: 3}
+  spriteValue: 0
+  Shadow: {fileID: 1830989424}
   timerText: {fileID: 1897671646}
 --- !u!1 &1630556200
 GameObject:
@@ -1093,7 +1102,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1830989427}
   - component: {fileID: 1830989426}
-  - component: {fileID: 1830989425}
   m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
@@ -1101,25 +1109,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1830989425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830989424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8701dbb742f75e4f8e6c263e2aad651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: {fileID: 1234837435}
-  Sprites:
-  - {fileID: 21300000, guid: bc112a0dd2a4e424eac80ca048a1532f, type: 3}
-  - {fileID: 21300000, guid: 58d19599177f51544892e6909b7bd563, type: 3}
-  - {fileID: 21300000, guid: 05c320a04c9a05241970ebd76d5d36dc, type: 3}
-  - {fileID: 21300000, guid: 75af8fa7fd921b64c9965c4f86eda8c0, type: 3}
-  spriteValue: 0
 --- !u!212 &1830989426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1348,9 +1337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6f8d412846a444699e0e0321c3d164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 553409909}
   time: {fileID: 1234837435}
   player: {fileID: 1722096414}
-  shadow: {fileID: 1830989425}
+  shadow: {fileID: 0}
 --- !u!4 &2130571407
 Transform:
   m_ObjectHideFlags: 0
