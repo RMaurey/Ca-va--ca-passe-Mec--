@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     public Sprite[] Sprites;
     public int spriteValue;
     [SerializeField] GameObject Shadow;
+    [SerializeField] GameObject deathUI;
 
     [SerializeField] TextMeshProUGUI timerText;
 
@@ -50,7 +51,8 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            Debug.Log("loose");
+            Time.timeScale = 0f;
+            deathUI.SetActive(true);
         }
 
         yield return null;
