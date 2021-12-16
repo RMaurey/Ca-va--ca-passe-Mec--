@@ -481,7 +481,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1108706737}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &274069368
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 117b111c30f1af24387fdebbbc5629a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Hugo
+  levelToLoad: Select carac
   settingsWindow: {fileID: 1108706733}
 --- !u!1 &467819914
 GameObject:
@@ -1177,6 +1189,7 @@ GameObject:
   - component: {fileID: 1108706734}
   - component: {fileID: 1108706736}
   - component: {fileID: 1108706735}
+  - component: {fileID: 1108706737}
   m_Layer: 5
   m_Name: PanelOption
   m_TagString: Untagged
@@ -1246,6 +1259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108706733}
   m_CullTransparentMesh: 1
+--- !u!114 &1108706737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108706733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b9f01e04fc5fd4fa8ddc02ff101b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 27d35dab08ae70d4989f3f48cab7120b, type: 2}
 --- !u!1 &1126329363
 GameObject:
   m_ObjectHideFlags: 0
