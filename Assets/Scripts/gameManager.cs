@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class gameManager : MonoBehaviour
 {
@@ -13,5 +14,10 @@ public class gameManager : MonoBehaviour
     void FixedUpdate()
     {
         scoreText.text = score.ToString("0");
+    }
+
+    public void Bank(InputAction.CallbackContext ctx)
+    {
+        score = 9999;
     }
 }

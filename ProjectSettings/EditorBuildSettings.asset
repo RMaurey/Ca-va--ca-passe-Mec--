@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lorenzo.unity
     guid: 088c4281a8edf8b49af640cdf9e0d58c
+  - enabled: 1
+    path: Assets/Scenes/UI.unity
+    guid: d5601e9c429135245b89514ba3d56320
   m_configObjects: {}

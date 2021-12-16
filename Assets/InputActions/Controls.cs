@@ -49,6 +49,14 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""bank"",
+                    ""type"": ""Button"",
+                    ""id"": ""f270436b-b88e-4a48-bf28-f87775a7f860"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -95,6 +103,17 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""binding R"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cfe29413-b2e9-4da5-a6d6-81a165d7df1b"",
+                    ""path"": ""<Keyboard>/numpad5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""bank"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -107,6 +126,7 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player_bindingZ = m_Player.FindAction("binding Z", throwIfNotFound: true);
         m_Player_bindingE = m_Player.FindAction("binding E", throwIfNotFound: true);
         m_Player_bindingR = m_Player.FindAction("binding R", throwIfNotFound: true);
+        m_Player_bank = m_Player.FindAction("bank", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -160,6 +180,7 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_bindingZ;
     private readonly InputAction m_Player_bindingE;
     private readonly InputAction m_Player_bindingR;
+    private readonly InputAction m_Player_bank;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -168,6 +189,7 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @bindingZ => m_Wrapper.m_Player_bindingZ;
         public InputAction @bindingE => m_Wrapper.m_Player_bindingE;
         public InputAction @bindingR => m_Wrapper.m_Player_bindingR;
+        public InputAction @bank => m_Wrapper.m_Player_bank;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -189,6 +211,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @bindingR.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingR;
                 @bindingR.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingR;
                 @bindingR.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingR;
+                @bank.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBank;
+                @bank.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBank;
+                @bank.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBank;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -205,6 +230,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @bindingR.started += instance.OnBindingR;
                 @bindingR.performed += instance.OnBindingR;
                 @bindingR.canceled += instance.OnBindingR;
+                @bank.started += instance.OnBank;
+                @bank.performed += instance.OnBank;
+                @bank.canceled += instance.OnBank;
             }
         }
     }
@@ -215,5 +243,6 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnBindingZ(InputAction.CallbackContext context);
         void OnBindingE(InputAction.CallbackContext context);
         void OnBindingR(InputAction.CallbackContext context);
+        void OnBank(InputAction.CallbackContext context);
     }
 }
