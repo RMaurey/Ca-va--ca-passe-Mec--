@@ -5,9 +5,56 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] TextMeshPro timerText;
+    public gameManager game;
+    public playerManager player;
+    public float currentTime;
+    public float startingTime;
+    private int rnd;
+    public Sprite[] Sprites;
+    public int spriteValue;
+    [SerializeField] GameObject Shadow;
+    [SerializeField] GameObject deathUI;
+
+    [SerializeField] TextMeshProUGUI timerText;
+
     void Start()
     {
-        
+        currentTime = startingTime;
+        StartCoroutine(RunTimer());
+    }
+
+    private IEnumerator RunTimer()
+    {
+        while (true)
+        {
+            currentTime -= 1;
+            timerText.text = currentTime.ToString("0");
+            yield return new WaitForSeconds(1);
+
+            if (currentTime == 0)
+            {
+                StartCoroutine(ScoreTest());
+                startingTime = Random.Range(2, 5);
+                currentTime = startingTime;
+                rnd = Random.Range(0, Sprites.Length);
+                Shadow.gameObject.GetComponent<SpriteRenderer>().sprite = Sprites[rnd];
+                spriteValue = rnd;
+            }
+        }
+    }
+
+    private IEnumerator ScoreTest()
+    {
+        if (player.playerInt == spriteValue)
+        {
+            game.score += 1;
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            deathUI.SetActive(true);
+        }
+
+        yield return null;
     }
 }
