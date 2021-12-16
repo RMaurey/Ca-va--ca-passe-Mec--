@@ -2165,6 +2165,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: eebfb700-8241-4550-bb49-833a2202d362
     m_ActionName: Player/binding R[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 382682424}
+        m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+        m_MethodName: Bank
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f270436b-b88e-4a48-bf28-f87775a7f860
+    m_ActionName: Player/bank[/Keyboard/numpad5]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
