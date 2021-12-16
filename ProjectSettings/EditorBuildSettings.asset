@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hugo.unity
     guid: e3406022817cd49478ae7a8fbaf716c8
+  - enabled: 1
+    path: Assets/Scenes/Anton.unity
+    guid: 2e8075c6435b1b64fa8c4f5f18f2000a
+  - enabled: 1
+    path: Assets/Scenes/Gabriel.unity
+    guid: bf1e93307c5110a41a29376d40d80d24
+  - enabled: 1
+    path: Assets/Scenes/Lorenzo.unity
+    guid: 088c4281a8edf8b49af640cdf9e0d58c
   m_configObjects: {}
