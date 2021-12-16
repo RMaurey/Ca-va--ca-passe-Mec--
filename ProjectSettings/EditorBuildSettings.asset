@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Enzo.unity
     guid: 1c6094b3650ca5845b0e1c220cddc8e0
+  - enabled: 1
+    path: Assets/Scenes/Valentin.unity
+    guid: 400190d6f94db0441997adf28e8f3ed8
+  - enabled: 1
+    path: "Assets/Scenes/R\xE9mi.unity"
+    guid: cfbc5d9732d41ea49ab41fde2784b065
+  - enabled: 1
+    path: Assets/Scenes/Hugo.unity
+    guid: e3406022817cd49478ae7a8fbaf716c8
   m_configObjects: {}
