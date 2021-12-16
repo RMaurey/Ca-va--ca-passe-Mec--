@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Controls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/InputActions/Controls.inputactions'
 
 using System;
 using System.Collections;
@@ -33,6 +33,22 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""binding E"",
+                    ""type"": ""Button"",
+                    ""id"": ""246c49ff-625e-46c3-8861-ddc60be25ea5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""binding R"",
+                    ""type"": ""Button"",
+                    ""id"": ""eebfb700-8241-4550-bb49-833a2202d362"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -57,6 +73,28 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""binding Z"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5a3c71b5-2157-4472-8c5a-08ac67ae3ac8"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""binding E"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1faad4d5-94d1-41dc-9c1d-d8105bae0349"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""binding R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -67,6 +105,8 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_bindingA = m_Player.FindAction("binding A", throwIfNotFound: true);
         m_Player_bindingZ = m_Player.FindAction("binding Z", throwIfNotFound: true);
+        m_Player_bindingE = m_Player.FindAction("binding E", throwIfNotFound: true);
+        m_Player_bindingR = m_Player.FindAction("binding R", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -118,12 +158,16 @@ public class @Controls : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_bindingA;
     private readonly InputAction m_Player_bindingZ;
+    private readonly InputAction m_Player_bindingE;
+    private readonly InputAction m_Player_bindingR;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
         public PlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @bindingA => m_Wrapper.m_Player_bindingA;
         public InputAction @bindingZ => m_Wrapper.m_Player_bindingZ;
+        public InputAction @bindingE => m_Wrapper.m_Player_bindingE;
+        public InputAction @bindingR => m_Wrapper.m_Player_bindingR;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -139,6 +183,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @bindingZ.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingZ;
                 @bindingZ.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingZ;
                 @bindingZ.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingZ;
+                @bindingE.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingE;
+                @bindingE.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingE;
+                @bindingE.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingE;
+                @bindingR.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingR;
+                @bindingR.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingR;
+                @bindingR.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBindingR;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -149,6 +199,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @bindingZ.started += instance.OnBindingZ;
                 @bindingZ.performed += instance.OnBindingZ;
                 @bindingZ.canceled += instance.OnBindingZ;
+                @bindingE.started += instance.OnBindingE;
+                @bindingE.performed += instance.OnBindingE;
+                @bindingE.canceled += instance.OnBindingE;
+                @bindingR.started += instance.OnBindingR;
+                @bindingR.performed += instance.OnBindingR;
+                @bindingR.canceled += instance.OnBindingR;
             }
         }
     }
@@ -157,5 +213,7 @@ public class @Controls : IInputActionCollection, IDisposable
     {
         void OnBindingA(InputAction.CallbackContext context);
         void OnBindingZ(InputAction.CallbackContext context);
+        void OnBindingE(InputAction.CallbackContext context);
+        void OnBindingR(InputAction.CallbackContext context);
     }
 }
