@@ -7,13 +7,13 @@ public class uiButtonHugo : MonoBehaviour
 {
     public void OnDeathRestartH()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
         Time.timeScale = 1f;
     }
 
     public void OnDeathReturnH()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 }

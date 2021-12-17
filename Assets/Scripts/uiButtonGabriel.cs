@@ -7,13 +7,13 @@ public class uiButtonGabriel : MonoBehaviour
 {
     public void OnDeathRestartG()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(8);
         Time.timeScale = 1f;
     }
 
     public void OnDeathReturnG()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 }
