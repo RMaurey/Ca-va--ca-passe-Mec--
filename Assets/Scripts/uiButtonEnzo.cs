@@ -13,6 +13,7 @@ public class uiButtonEnzo : MonoBehaviour
 
     public void OnDeathReturnE()
     {
-        Debug.Log("Return");
+        SceneManager.LoadScene(8);
+        Time.timeScale = 1f;
     }
 }
