@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI.unity
     guid: d5601e9c429135245b89514ba3d56320
+  - enabled: 1
+    path: Assets/Scenes/Select carac.unity
+    guid: 02f4855352bd6df4b94507f82a8a4d08
   m_configObjects: {}
