@@ -8,49 +8,49 @@ public class SceneChanger : MonoBehaviour
 
     public void loadEnzo()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
         Time.timeScale = 1f;
     }
 
     public void loadAnton()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(7);
         Time.timeScale = 1f;
     }
 
     public void loadQuentin()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1f;
     }
 
     public void loadValentin()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
         Time.timeScale = 1f;
     }
 
     public void loadRemi()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
         Time.timeScale = 1f;
     }
 
     public void loadGabriel()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(8);
         Time.timeScale = 1f;
     }
 
     public void loadLorenzo()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(9);
         Time.timeScale = 1f;
     }
 
     public void loadHugo()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
         Time.timeScale = 1f;
     }
 

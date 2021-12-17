@@ -7,13 +7,13 @@ public class uiButtonQuentin : MonoBehaviour
 {
     public void OnDeathRestartQ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1f;
     }
 
     public void OnDeathReturnQ()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 }

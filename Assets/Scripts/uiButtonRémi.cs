@@ -7,13 +7,13 @@ public class uiButtonRémi : MonoBehaviour
 {
     public void OnDeathRestartR()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
         Time.timeScale = 1f;
     }
 
     public void OnDeathReturnR()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(0);
         Time.timeScale = 1f;
     }
 }
