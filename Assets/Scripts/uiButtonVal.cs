@@ -13,6 +13,7 @@ public class uiButtonVal : MonoBehaviour
 
     public void OnDeathReturnV()
     {
-        Debug.Log("Return");
+        SceneManager.LoadScene(8);
+        Time.timeScale = 1f;
     }
 }
